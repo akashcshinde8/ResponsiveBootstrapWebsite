@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Webpage</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <style>
+        .main{
+            border: 2px solid red;
+        }
+        #logo{
+            height: 25px;
+            width: 70px;
+            background-color: black;
+        }
+        .navbarmain{
+            background-color: #ff7a21 !important;
+        }
+        .navbarmain a{
+            color: white;
+            margin-left: 50px;
+        }
+        .navbar-toggler-icon{
+            background-color: white;
+        }
+        .carousel-inner img{
+            width: 100%;
+            height: 450px;
+        }
+        .enrollnow h5{
+            color: white;
+            width: 200px;
+            height: 35px;
+            justify-content: center;
+            background-color: darkblue;
+            font-size: 25px;
+            border-radius: 10px;
+            margin-left: 450px;
+        }
+        .subcourse{
+            margin-left: 0px !important;
+            color: blue !important;
+        }
+        .mainbox{
+            border: 2px solid lightgrey;
+            width: 100%;
+            background-color: lightgrey;
+            padding-bottom:0px;
+        }
+        .innerimage{
+            height: 250px !important;
+            padding: 10px;
+            background-color: darkblue;
+        }
+        .innerimage:hover{
+            transform: scale(1.1);
+        }
+        .card-body a{
+            border: 2px solid greenyellow;
+            background-color: yellowgreen;
+            color: white;
+            border-radius: 15px;
+            padding: 10px;
+        }
+        #fswd{
+            margin-top: 30px;
+            margin-left: 15px;
+            text-align: center;
+
+        }
+        .card-body{
+            background-color: darkblue;
+            text-align: center;
+            box-shadow: 0 0px 5px 0px;
+        }
+        .mainbox2{
+            border: 2px solid lightgrey;
+            width: 100%;
+            background-color: lightgrey;
+            padding-bottom:40px;
+        }
+        .innerimage1{
+            height: 250px !important;
+            padding: 10px;
+            background-color: darkblue;
+        }
+        .innerimage1:hover{
+            transform: scale(1.1);
+        }
+        .outerbox{
+            border: 2px solid lightgrey;
+            background-color: lightgrey;
+            padding-bottom: 20px;
+        }
+        .akashimage{
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            justify-content: center;
+        }
+        .textbox{
+            text-align: center;
+            margin-top: 60px;
+        }
+        .founderouterbox{
+            border: 2px solid lightgreen;
+            background-color: lightgreen;
+            padding-bottom: 30px;
+        }
+        .founderimage{
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            justify-content: center;  
+        }
+        .textbox1{
+            text-align: center;
+            margin-top: 90px;
+        }
+        #companyname{
+            width: 100%;
+            height: 40px;
+            border: 2px solid #00000036;
+            background-color: lightgreen;
+            color:black;
+            font-size: 25px;
+        }
+        .marqueebox{
+            border: 2px solid lightgreen;
+            padding-bottom: 20px;
+            background-color: lightgreen;
+        }
+        .contactborder{
+            border: 2px solid lightgreen;
+            background-color: lightgreen;
+            justify-content: space-between;
+            padding-bottom: 40px;
+        }
+        .symbol{
+            text-align: center;
+            font-size: 40px;
+        }
+        .cardmainbox{
+            border: 1px solid #00000036  ;
+
+        }
+        .detailbox{
+            justify-content: space-between;
+        }
+        .fixed{
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            width:150px;
+            border: 3px solid yellow;
+            border-radius: 20px;
+            background-color: yellow;
+            font-size: 25px;
+        }
+        .toggler{
+            border: #000000 !important;
+        }
+        .detailborder{
+            border: 2px solid lightgreen;
+            background-color: lightgreen;
+        }
+        
+        
+       
+    </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- <div class="fixed">
+        <a target="_blank" href="https://web.whatsapp.com/"><i  class="fa fa-whatsapp" aria-hidden="true">Message Us</i></a>
+    </div> -->
+    <!-- Responsive Navbar......................................................... -->
+    <nav class="navbar navbar-expand-md navbarmain">
+        <!-- Brand -->
+        <a class="navbar-brand" href="#"><img id="logo" src="logo.png" alt="logo"></a>
+      
+        <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler toggker" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span style="color: black;"  class="navbar-toggler-icon "><i class="fa fa-bars" aria-hidden="true"></i></span>
+        </button>
+      
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About Us</a>
+        </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Courses
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item subcourse " href="#">Full Stack Web Developement</a>
+                    <a class="dropdown-item subcourse" href="#">Full Stack Java Developement</a>
+                    <div class="dropdown-divider"></div>
+                </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Placement</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Gallery</a>
+            </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact Us</a>
+            </li>  
+          </ul>
+        </div>
+    </nav>
+    <!-- Navbar End Here........................................................................... -->
+    <!-- Slider Started(Full stack web developement)........................................................... -->
+    <div class=" carousel">
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="aj1.jpeg" alt="First slide">
+            <div class="carousel-caption d-none d-md-block">
+                <a class="enrollnow" href="#"><h5>Enroll Now</h5></a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="java-program.png" alt="Second slide">
+            <div class="carousel-caption d-none d-md-block">
+                <a class="enrollnow" href="#"><h5>Enroll Now</h5></a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="wb.png" alt="Third slide">
+            <div class="carousel-caption d-none d-md-block">
+                <a class="enrollnow" href="#"><h5>Enroll Now</h5></a>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+    </div>
+    </div>
+    <!-- Slider End Here......................................................................... -->
+    <!-- Card Started............................................................................ -->
+
+    <div class="mainbox">
+        <h4 id="fswd" style="color: darkblue; ">Full Stack Web Developement Course Content</h4>
+        <div class="row mt-3">
+        <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 mainboxbox ">
+            <div class="card outercard m-2" >
+                <img class="card-img-top innerimage" src="htmllogo.png" alt="Card image cap">
+                <div class="card-body">
+                    <a href="#">Read More</a>
+                </div>
+              </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 mainboxbox ">
+            <div class="card outercard m-2" >
+                <img class="card-img-top innerimage" src="csslogo.png" alt="Card image cap">
+                <div class="card-body">
+                    <a href="#">Read More</a>
+                </div>
+              </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 mainboxbox ">
+            <div class="card outercard m-2" >
+                <img class="card-img-top innerimage" src="js1.png" alt="Card image cap">
+                <div class="card-body">
+                  <a href="#">Read More</a>
+                </div>
+              </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 mainboxbox ">
+            <div class="card outercard m-2" >
+                <img class="card-img-top innerimage" src="react1.png" alt="Card image cap">
+                <div class="card-body">
+                    <a href="#">Read More</a>
+                </div>
+              </div>
+        </div>
+        </div>    
+    </div>
+    <!-- card ended ................................................................................-->
+    <!-- Card started 2............................................................................ -->
+    <div class="mainbox2">
+        <h4 id="fswd" style="color: darkblue; ">Full Stack Java Developement Course Content</h4>
+        <div class="row mt-3">
+        <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 mainboxbox2">
+            <div class="card outercard m-2" >
+                <img class="card-img-top innerimage1" src="j3.png" alt="Card image cap">
+                <div class="card-body">
+                    <a href="#">Read More</a>
+                </div>
+              </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 mainboxbox">
+            <div class="card outercard m-2 " >
+                <img class="card-img-top innerimage1" src="adnjava.png" alt="Card image cap">
+                <div class="card-body">
+                    <a href="#">Read More</a>
+                </div>
+              </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 mainboxbox">
+            <div class="card outercard m-2" >
+                <img class="card-img-top innerimage1" src="spring.png" alt="Card image cap">
+                <div class="card-body">
+                  <a href="#">Read More</a>
+                </div>
+              </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 mainboxbox">
+            <div class="card outercard m-2" >
+                <img class="card-img-top innerimage1" src="mysql.png" alt="Card image cap">
+                <div class="card-body">
+                    <a href="#">Read More</a>
+                </div>
+              </div>
+        </div>
+        </div>    
+    </div>
+    <!-- Card 2 ended............................................................................. -->
+    <!-- What Our Student Says.................................................................... -->
+    <div class="outerbox">
+        <div>
+            <h4 style="text-align: center;color: darkblue;">What Our Student Says</h4>
+        </div>
+        <div class="row mainsts">
+        <div class="col-sm-12 col-md-12 col-lg-6 text-center textbox"  >
+            <h5 class="studentsays">Akash Shinde</h5>
+            <h5 class="studentsays">Java Under Tree is one of the best institute to enhance skills in software.</h5>
+            <h5>A very good and great place if you are a serious learner and if you want to learn more things, Java under Tree is a Hub where you will get all the things.</h5>
+            <h5>Thank You</h5>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-6 text-center">
+            <img class="akashimage" src="A1.jpeg" alt="">
+        </div>
+        </div>
+    </div>
+    <!-- What Our Student Says ends.................................................................... -->
+    <!-- About Founder................................................................................. -->
+    <div class="founderouterbox">
+        <h4 style="text-align: center; color: darkblue;margin-top: 30px;">About Founder</h4>
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-6 text-center textbox2">
+                <img class="founderimage" src="rahul.png" alt="">
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-6  textbox1">
+                <h5>Rahul Anuse</h5>
+                <h5>Education:Bsc.Maths</h5>
+                <h5>Professional & Qualified Full Stack Developer</h5>
+            </div>
+
+        </div>
+    </div>
+    <div class="marqueebox">
+        <h4 style="text-align: center; color: darkblue;">Our Parteners</h4>
+        <div>
+            <marquee id="companyname" width="100%" direction="left" height="200px">
+                <span>Microsoft</span>
+                <span style="margin-left: 200px;">TCS</span>
+                <span style="margin-left: 200px;">Accenture</span>
+                <span style="margin-left: 200px;">IBM</span>
+                <span style="margin-left: 200px;">Veracle</span>
+                <span style="margin-left: 200px;">Wipro</span>
+                <span style="margin-left: 200px;">HCL</span>
+            </marquee>
+        </div>
+    </div>
+    <div class="detailborder">
+    <div class="row m-4 bg-info">
+
+            <div class="col-sm-12 col-md-6 col-lg-4 border">
+                <div class="symbol">
+                    <i class="fa fa-clock-o" aria-hidden="true"></i>
+                    <div class="cardbody ">
+                      <h5>Class Timing:</h5>
+                      <h5>Monday - Saturday</h5>
+                      <h5>8:00 AM - 6:00 PM</h5>
+                      <h5>Sunday Off</h5>
+                    </div>
+                  </div>
+            </div>
+            
+            <div class="col-sm-12 col-md-6 col-lg-4 border">
+                <div  class="symbol">
+                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                    <div class="cardbody">
+                      <h5>3rd Floor, Brahmachaitanya nagar, Ramalaya Building, Java Under Tree, Vasud Road, Sangola, Maharashtra 413307</h5>
+                    </div>
+                  </div>
+            </div> 
+            
+            <div class="col-sm-12 col-md-6 col-lg-4 border">
+                <div  class="symbol">
+                    <i class="fa fa-phone" aria-hidden="true"></i>
+                    <div class="cardbody">
+                        <h5>Rahul Anuse</h5>
+                      <h5>8010503510</h5>
+                    </div>
+                  </div>
+            </div> 
+    </div>
+    </div>
+   
+</body>
+</html>
